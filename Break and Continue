@@ -1,0 +1,34 @@
+x = 0
+while x <= 10:
+    if x == 7:
+        x += 1
+        continue
+    print(x)
+    x += 1
+
+sum_of_numbers = 0
+d = 5
+while d <= 20:
+    if d % 3 != 0:
+        sum_of_numbers += d
+    d += 1
+print(sum_of_numbers)
+
+sum_of_number1 = 0
+question1 = int(input("Pick a starting number. "))
+question2 = int(input("Pick a ending number. "))
+
+for number in range(question1, question2, + 1):
+    if number == 13 or number == 31:
+        print("encountered a diva number (13 or 31). stopping the sum")
+        break
+    sum_of_number1 += number
+print("the sum of the numbers is:", sum_of_number1)
+
+while True:
+    word = input("Enter a word (or type 'stop' to exit): ")
+
+    if word.lower() == "stop":
+        print("goodbye")
+        break
+    print(f"your word: {word}")
